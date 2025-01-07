@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ShoeController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('shoes', ShoeController::class);
